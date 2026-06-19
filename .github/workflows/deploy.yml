@@ -1,0 +1,24 @@
+name: Deploy ke Mahavikri
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v3
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.sdntetesua84.sch.id # Pastikan ini alamat server FTP Anda
+        username: spmbsekolah@sdntetesua84.sch.id
+        password: ${{ secrets.FTP_PASSWORD }}
+        
+        # Sesuai dengan gambar Anda, folder tujuannya adalah spmbsekolah di dalam public_html
+        server-dir: /public_html/spmbsekolah/
