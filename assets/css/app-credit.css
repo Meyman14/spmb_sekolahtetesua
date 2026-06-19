@@ -1,0 +1,116 @@
+/* Identitas pembuat aplikasi */
+.app-credit {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+    user-select: none;
+}
+
+.app-credit-prefix {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.app-credit-name {
+    color: #1a9e94;
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.12),
+        0 0 12px rgba(46, 196, 182, 0.35);
+}
+
+.app-credit-sep {
+    font-weight: 400;
+    opacity: 0.65;
+}
+
+.app-credit-handle {
+    color: #a67c2e;
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.12),
+        0 0 10px rgba(201, 162, 39, 0.3);
+}
+
+/* Footer tengah bawah — semua halaman dalam aplikasi */
+.app-site-footer {
+    flex-shrink: 0;
+    margin-top: auto;
+    width: 100%;
+    padding: 16px 28px 22px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 51, 102, 0.03) 100%);
+    box-sizing: border-box;
+}
+
+.app-credit--main .app-credit-prefix {
+    color: #5c6570;
+}
+
+.app-credit--main .app-credit-sep {
+    color: #9aa3ad;
+}
+
+.app-credit--main {
+    font-size: 14px;
+}
+
+/* Halaman login — di bawah kartu, area merah penuh kontras */
+.app-credit--login {
+    font-size: 14px;
+    line-height: 1.65;
+    padding: 12px 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.18);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.app-credit--login .app-credit-prefix {
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.65),
+        0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.app-credit--login .app-credit-name {
+    color: #5eead4;
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.55),
+        0 0 16px rgba(94, 234, 212, 0.4);
+}
+
+.app-credit--login .app-credit-sep {
+    color: rgba(255, 255, 255, 0.55);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.app-credit--login .app-credit-handle {
+    color: #e8c547;
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.55),
+        0 0 14px rgba(232, 197, 71, 0.35);
+}
+
+@media (max-width: 991px) {
+    .app-site-footer {
+        padding: 16px 20px 22px;
+    }
+
+    .app-credit--main {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-credit--login {
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+
+    .app-credit--main {
+        font-size: 12px;
+    }
+}

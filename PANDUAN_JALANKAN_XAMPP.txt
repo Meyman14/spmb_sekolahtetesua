@@ -1,0 +1,36 @@
+================================================================================
+  CARA MENGHINDARI ERROR DATABASE SAAT PERTAMA BUKA LAPTOP
+  SPMB - UPTD SD Negeri No. 071184 Tetesua
+================================================================================
+
+PENYEBAB ERROR
+--------------
+Pesan "No connection could be made because the target machine actively refused it"
+artinya MySQL BELUM BERJALAN. Apache (halaman web) bisa sudah jalan, tapi
+database MySQL masih mati.
+
+URUTAN YANG BENAR (SETIAP NYALAKAN LAPTOP)
+------------------------------------------
+1. Buka aplikasi "XAMPP Control Panel" (Run as Administrator jika perlu).
+2. Klik START pada baris MySQL  --> tunggu sampai background HIJAU.
+3. Klik START pada baris Apache --> tunggu sampai background HIJAU.
+4. Tunggu 5-10 detik.
+5. Baru buka browser: http://localhost/spmb_sekolah/
+
+CEK SEBELUM LOGIN (OPSIONAL)
+----------------------------
+Buka: http://localhost/spmb_sekolah/cek_server.php
+Jika MySQL dan Database hijau/terhubung, baru login di index.php.
+
+JIKA MYSQL TIDAK MAU START
+--------------------------
+- Tutup program yang memakai port 3306 (kadang MySQL lain).
+- Di XAMPP, klik "Config" MySQL > my.ini, atau lihat log di panel XAMPP.
+- Restart komputer, jalankan XAMPP lagi sebagai Administrator.
+
+CATATAN
+-------
+- Folder kode aplikasi: C:\xampp\htdocs\spmb_sekolah\
+- Data database disimpan oleh MySQL (bukan sebagai file .php di folder project).
+
+================================================================================

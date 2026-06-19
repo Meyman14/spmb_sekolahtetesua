@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #b00000 0%, #8a0000 45%, #9e0000 100%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 28px 24px;
+    box-sizing: border-box;
+}
+
+.login-shell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 440px;
+    gap: 36px;
+}
+
+.login-credit-bar {
+    width: 100%;
+    text-align: center;
+    padding: 0 8px;
+}
+
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    min-width: 280px;
+    padding: 36px 40px 40px;
+    border-radius: 16px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo-section {
+    margin-bottom: 20px;
+}
+
+.school-logo {
+    display: block;
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.login-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.55;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.school-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #b00000;
+    margin-bottom: 28px;
+    line-height: 1.45;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #aaaaaa;
+}
+
+.form-group input:focus {
+    border-color: #003366;
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.15);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 13px;
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #003366;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-login:hover {
+    background-color: #002244;
+}
+
+.btn-login:active {
+    transform: scale(0.98);
+}
+
+.alert-error {
+    background-color: #fdecea;
+    color: #b00000;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.dashboard-body {
+    padding: 24px;
+}
+
+.dashboard-card {
+    background-color: #ffffff;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+    text-align: center;
+}
+
+.dashboard-card h1 {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.dashboard-user {
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 28px;
+}
+
+.btn-logout {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #b00000;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-logout:hover {
+    background-color: #8a0000;
+}
+
+@media (max-width: 1024px) {
+    body.login-page {
+        padding: 24px 16px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    body.login-page {
+        padding: 18px 14px;
+    }
+
+    .login-card {
+        padding: 28px 24px 32px;
+    }
+
+    .school-logo {
+        width: 100px;
+    }
+
+    .login-title {
+        font-size: 14px;
+    }
+
+    .school-name {
+        font-size: 13px;
+    }
+}

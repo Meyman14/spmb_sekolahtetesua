@@ -1,0 +1,13 @@
+# Abaikan folder vendor
+/vendor
+
+# Abaikan file konfigurasi database
+config.php
+.env
+
+# Abaikan folder upload
+/uploads
+
+# Abaikan file sistem (Windows/Mac)
+.DS_Store
+Thumbs.db

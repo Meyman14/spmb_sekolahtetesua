@@ -1,0 +1,141 @@
+/**
+ * Latar belakang halaman login — biru gradasi + ikon playful
+ * Hanya visual background; tidak mengubah struktur/form login
+ */
+
+body.login-page {
+    position: relative;
+    overflow-x: hidden;
+    background: linear-gradient(160deg, #b8e8ff 0%, #7ec8f7 35%, #5eb8f0 65%, #89d4ff 100%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Lingkaran konsentris halus (depth) */
+.login-playful-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.login-playful-bg::before,
+.login-playful-bg::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.22);
+}
+
+.login-playful-bg::before {
+    width: min(90vw, 720px);
+    height: min(90vw, 720px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-playful-bg::after {
+    width: min(70vw, 520px);
+    height: min(70vw, 520px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 1px;
+    opacity: 0.6;
+}
+
+/* Ikon dekoratif mengambang */
+.login-playful-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    filter: drop-shadow(0 4px 12px rgba(0, 80, 140, 0.15));
+    animation: loginFloat 6s ease-in-out infinite;
+    opacity: 0.92;
+}
+
+.login-playful-icon--books {
+    top: 8%;
+    left: 6%;
+    animation-delay: 0s;
+}
+
+.login-playful-icon--pencil {
+    top: 10%;
+    right: 8%;
+    transform: rotate(25deg);
+    animation-delay: 1s;
+}
+
+.login-playful-icon--star {
+    top: 42%;
+    left: 4%;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    animation-delay: 2s;
+}
+
+.login-playful-icon--telescope {
+    top: 38%;
+    right: 6%;
+    animation-delay: 0.5s;
+}
+
+.login-playful-icon--rainbow {
+    bottom: 12%;
+    right: 10%;
+    animation-delay: 1.5s;
+}
+
+.login-playful-icon--flower {
+    bottom: 18%;
+    left: 12%;
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    opacity: 0.7;
+    animation-delay: 2.5s;
+}
+
+@keyframes loginFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.login-playful-icon--pencil {
+    animation-name: loginFloatTilt;
+}
+
+@keyframes loginFloatTilt {
+    0%, 100% { transform: rotate(25deg) translateY(0); }
+    50% { transform: rotate(25deg) translateY(-10px); }
+}
+
+/* Konten login di atas background */
+.login-page-layout {
+    position: relative;
+    z-index: 1;
+}
+
+.login-left .login-card {
+    box-shadow: 0 20px 50px rgba(0, 100, 180, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+/* Tab slideshow lebih kontras di latar biru */
+.login-slideshow-tab {
+    border-color: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.login-slideshow-tab.is-active {
+    background: linear-gradient(135deg, #00acc1, #0288d1);
+    border-color: #fff;
+    box-shadow: 0 4px 16px rgba(2, 136, 209, 0.35);
+}
+
+@media (max-width: 768px) {
+    .login-playful-icon--books { left: 2%; top: 4%; }
+    .login-playful-icon--pencil { right: 2%; }
+    .login-playful-icon--telescope { display: none; }
+}

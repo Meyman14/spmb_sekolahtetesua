@@ -1,0 +1,45 @@
+{
+    "time": "2026-06-06T06:43:45+02:00",
+    "remote_addr": "::1",
+    "action": "submit_final",
+    "post_keys": [
+        "edit_id",
+        "tinggi_badan",
+        "berat_badan",
+        "lingkar_kepala",
+        "jarak_sekolah",
+        "waktu_tempuh",
+        "jumlah_saudara",
+        "hobi",
+        "cita_cita",
+        "action"
+    ],
+    "post": {
+        "edit_id": "2",
+        "tinggi_badan": "80",
+        "berat_badan": "30",
+        "lingkar_kepala": "50",
+        "jarak_sekolah": "1",
+        "waktu_tempuh": "10",
+        "jumlah_saudara": "2",
+        "hobi": "bola",
+        "cita_cita": "polisi",
+        "action": "submit_final"
+    },
+    "files": {
+        "file_kk": "logo.png",
+        "file_akte": "logo.png",
+        "file_ijazah": "logo.png",
+        "file_kks": "logo.png",
+        "file_foto": "logo.png",
+        "file_surat_orangtua": "logo.png"
+    },
+    "session_keys": [
+        "username",
+        "level",
+        "nama",
+        "absensi_hadir_tanggal",
+        "pendaftaran_siswa",
+        "edit_siswa_id"
+    ]
+}

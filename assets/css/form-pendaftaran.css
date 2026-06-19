@@ -1,0 +1,269 @@
+/* Header resmi Formulir Peserta Didik (halaman 1) */
+.formulir-card-step1 {
+    overflow: visible;
+    border: none;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.formulir-card-step1 .formulir-banner-wrap {
+    width: 100%;
+    background: #e65100;
+    border-radius: 12px 12px 0 0;
+}
+
+.formulir-card-step1 .formulir-banner {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 20px 24px;
+    text-align: center;
+    color: #ffffff !important;
+    font-family: "Times New Roman", Times, Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.formulir-card-body-step1 {
+    padding-top: 1.5rem !important;
+}
+
+.formulir-official-header {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.formulir-meta {
+    padding: 14px 4px 4px;
+}
+
+.tanggal-pendaftaran-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 12px;
+}
+
+.tanggal-label {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.tanggal-input-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tgl-box {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    border: 1px solid #333333;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 4px 2px;
+    background: #ffffff;
+}
+
+.tgl-box-year {
+    width: 56px;
+}
+
+.tgl-sep {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #333333;
+    user-select: none;
+}
+
+.formulir-code {
+    display: inline-block;
+    border: 2px solid #1a1a1a;
+    padding: 6px 14px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.formulir-divider {
+    margin: 16px 0 20px;
+    border-color: #cccccc;
+}
+
+.form-wizard .step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.form-wizard .step-item {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.form-wizard .step-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e9ecef;
+    color: #6c757d;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.form-wizard .step-item.active .step-circle,
+.form-wizard .step-item.done .step-circle {
+    background: var(--spmb-red);
+    color: #ffffff;
+}
+
+.form-wizard .step-item.done .step-circle {
+    background: #198754;
+}
+
+.form-wizard .step-label {
+    font-size: 12px;
+    color: #666666;
+    display: block;
+}
+
+.form-wizard .step-item.active .step-label {
+    color: var(--spmb-red);
+    font-weight: 600;
+}
+
+.form-section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--spmb-red);
+    margin: 20px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.form-section-title:first-of-type {
+    margin-top: 0;
+}
+
+/* Bar tombol bawah formulir: kiri / kanan */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.form-actions-left {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.form-actions-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: auto;
+}
+
+/* Halaman 2: draft mendekati selanjutnya di kanan */
+.form-actions-step2 .form-actions-right {
+    gap: 12px;
+}
+
+.form-actions-step2 .btn-simpan-draft {
+    margin-right: 4px;
+}
+
+.form-actions .btn-simpan-draft {
+    color: #1a1a1a;
+    font-weight: 600;
+    min-width: 140px;
+}
+
+.form-actions .btn-selanjutnya,
+.form-actions .btn-simpan-final {
+    font-weight: 600;
+    min-width: 140px;
+}
+
+.form-actions .btn-sebelumnya {
+    min-width: 130px;
+}
+
+.form-actions .btn-simpan-final {
+    font-weight: 700;
+}
+
+@media (max-width: 576px) {
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-actions-left,
+    .form-actions-right {
+        width: 100%;
+        margin-left: 0;
+        justify-content: stretch;
+    }
+
+    .form-actions-right .btn,
+    .form-actions-left .btn,
+    .form-actions-left .btn-sebelumnya {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .form-actions-step2 .form-actions-right {
+        flex-direction: column;
+    }
+}
+
+.upload-hint {
+    font-size: 12px;
+    color: #888888;
+}
+
+/* Nama siswa / orang tua — tampilan huruf kapital saat mengetik */
+.form-control.input-uppercase {
+    text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+    .form-wizard .step-label {
+        font-size: 10px;
+    }
+
+    .form-wizard .step-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .formulir-card-step1 .formulir-banner {
+        font-size: 1.35rem;
+        padding: 16px 12px;
+        letter-spacing: 0.8px;
+    }
+}

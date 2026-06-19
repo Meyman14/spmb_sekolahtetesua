@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Test: Login Slideshow</title>
+    <link rel="stylesheet" href="assets/css/login-playful-bg.css">
+    <link rel="stylesheet" href="assets/css/login-posters.css">
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; padding: 24px; background:#eaf6ff }
+        .wrapper { max-width: 1024px; margin: 24px auto }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Test Slideshow — Klik tombol tab untuk melihat sambutan</h2>
+
+        <div class="login-slideshow" id="loginSlideshow" aria-live="polite">
+            <div class="login-slideshow-nav" role="tablist" aria-label="Informasi halaman login">
+                <button type="button" class="login-slideshow-tab is-active" role="tab" data-slide-index="0" aria-selected="true">
+                    <i class="bi bi-info-circle"></i>
+                    <span>Info Pendaftaran</span>
+                </button>
+                <button type="button" class="login-slideshow-tab" role="tab" data-slide-index="1" aria-selected="false">
+                    <i class="bi bi-chat-heart"></i>
+                    <span>Sambutan Kasek</span>
+                </button>
+            </div>
+
+            <div class="login-slideshow-viewport">
+                <div class="login-slide login-slide-info is-active" data-slide-id="info" aria-hidden="false">
+                    <div class="login-posters-row">
+                        <div class="login-poster poster-card"> 
+                            <div class="poster-header poster-header-flow"><h3 style="padding:18px; color:#fff;">ALUR PENDAFTARAN SPMB</h3></div>
+                            <div style="padding:12px;">Contoh konten info pendaftaran.</div>
+                        </div>
+                        <div class="login-poster poster-card">
+                            <div class="poster-header poster-header-schedule"><h3 style="padding:18px; color:#fff;">KEGIATAN SEKOLAH</h3></div>
+                            <div style="padding:12px;">Contoh jadwal.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login-slide login-slide-sambutan" data-slide-id="sambutan" aria-hidden="true">
+                    <article class="login-sambutan-card poster-card poster-scroll">
+                        <header class="login-sambutan-hero" style="padding:14px;">
+                            <span class="poster-badge">SAMBUTAN RESMI</span>
+                            <h2 class="login-sambutan-title">Sambutan Kepala Sekolah (Contoh)</h2>
+                        </header>
+                        <div style="padding:12px;">
+                            <p>Ini adalah teks sambutan contoh. Gulir untuk membaca lebih lanjut.</p>
+                            <p>Paragraf tambahan untuk mengisi konten.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.js"></script>
+    <script src="assets/js/login-slideshow.js"></script>
+</body>
+</html>
